@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Album Project</title>
+  <link href='http://fonts.googleapis.com/css?family=Audiowide|Jura' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+  <header>
+    <h1 id="top">Brendan's Photos</h1>
+    <nav class="container">
+      <div class="trigger">
+        <div class="top_menu_line"></div>
+        <div class="middle_menu_line1"></div>
+        <div class="middle_menu_line2"></div>
+        <div class="bottom_menu_line"></div>
+      </div>
+      <ul>
+        <li class="li_pre_click"><a href="" rel="portrait"><img src="images/portrait_icon.png" alt=""></a></li>
+        <li class="li_pre_click"><a href="" rel="landscape"><img src="images/landscape_icon.png" alt=""></a></li>
+        <li class="li_pre_click"><a href="" rel="selfie"><img src="images/selfie_icon.png" alt=""></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+    <div id="portrait" class="album">
+      <h2>Portraits</h2>
+      <ul class="pics shrink">
+        <li class="portAlign"><img class="img" src="images/portrait1.jpg" alt=""></li>
+        <li class="portAlign"><img class="img" src="images/portrait2.jpg" alt=""></li>
+        <li class="portAlign"><img  class="img" src="images/portrait3.jpg" alt=""></li>
+      </ul>
+      <p class="describe shrink">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, molestiae. Velit dolor, eos eum, aliquid maiores nihil voluptatem nesciunt corporis? Eaque recusandae magnam voluptas inventore ut itaque voluptates reprehenderit est.<a class= "move_top_a" href="#top"><img src="images/top_icon.png" alt=""></a>
+      </p>
+    </div>
+    <div id="landscape" class="album">
+      <h2>Landscapes</h2>
+      <ul class="pics shrink">
+        <li><img  class="img" src="images/landscape1.jpg" alt=""></li>
+        <li><img  class="img" src="images/landscape2.jpg" alt=""></li>
+        <li><img  class="img" src="images/landscape3.jpg" alt=""></li>
+      </ul>
+      <p class="describe shrink">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt explicabo at quis error tenetur blanditiis. Aspernatur rem provident quaerat voluptas corporis officiis eaque labore eveniet consectetur quae, odio alias voluptate! <a class= "move_top_a" href="#top"><img src="images/top_icon.png" alt=""></a>
+      </p>
+    </div>
+    <div id="selfie" class="album">
+      <h2>Selfies</h2>
+      <ul class="pics shrink">
+        <li><img  class="img" src="images/selfie1.jpg" alt=""></li>
+        <li><img  class="img" src="images/selfie2.jpg" alt=""></li>
+        <li><img  class="img" src="images/selfie3.jpg" alt=""></li>
+      </ul>
+      <p class="describe shrink">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam impedit eius architecto officiis libero esse repellat, sunt distinctio tenetur nam, provident id, quaerat vel quas autem dolores! Reprehenderit, similique, harum? <a class= "move_top_a" href="#top"><img src="images/top_icon.png" alt=""></a>
+        <!--video src="https://www.youtube.com/watch?v=kdemFfbS5H0"
+          width="auto" height="auto" controls>
+          <p>A video explaining selfies</p>
+        </video-->
+      </p>
+    </div>
+  </div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

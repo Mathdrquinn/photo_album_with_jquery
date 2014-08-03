@@ -1,0 +1,18 @@
+@media all and (max-width: 568px) {
+  body {
+    padding-left: 0;
+    padding-right: 0; }
+    body ul {
+      padding-left: 0px; }
+      body ul img {
+        max-width: 490px; } }
+
+@media all and (max-width: 320px) {
+  body {
+    padding-left: 0;
+    padding-right: 0; }
+  ul {
+    padding-left: 0px; }
+  .main .album .pics li img {
+    max-width: 270px;
+    margin-left: 0px; } }

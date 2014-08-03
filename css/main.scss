@@ -1,0 +1,55 @@
+$colorGreen:#54C89A;
+$colorBlack:#3A3E3D;
+$colorGrey:#DFDCC8;
+
+body {
+  padding:0;
+  margin:0;
+}
+
+header {
+  padding:0;
+  margin:0;
+  width:100%;
+  background-color:$colorGreen;
+  h1 {
+    margin:0px;
+    padding-top:10px;
+    padding-bottom:1em;
+    color:$colorBlack;
+  }
+  nav {
+    background-color:$colorBlack;
+    color:$colorGrey;
+  }
+}
+
+.main {
+  margin:0;
+  padding:0;
+  width:100%;
+  background-color:$colorGrey;
+  .album {
+    h3 {
+      margin:0px;
+      padding-left:30px;
+      padding-top:1em;
+      padding-bottom:1em;
+      background-color:$colorGreen;
+      color:$colorBlack
+    }
+    .pics {
+      padding:20px 50px;
+      text-align:center;
+      li {
+        display:inline-block;
+        padding:0px auto;
+      }
+    }
+    .describe {
+      background-color:$colorBlack;
+      color:$colorGrey;
+      text-align:left;
+    }
+  }
+}

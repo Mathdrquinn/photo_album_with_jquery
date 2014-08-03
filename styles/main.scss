@@ -1,0 +1,222 @@
+$colorGreen:#54C89A;
+$colorBlack:#3A3E3D;
+$colorGrey:#DFDCC8;
+$colorTan:#918979;
+$headingFont: 'Audiowide', cursive;
+$textFont: 'Jura', sans-serif;
+
+body {
+  padding:0;
+  margin:0;
+  background-color:$colorTan;
+  padding:20px;
+  font-family:$textFont;
+}
+
+header {
+  padding:0;
+  margin:0;
+  width:100%;
+  background-color:$colorGreen;
+  border-radius:20px;
+  h1 {
+    padding-left:30px;
+    margin:0;
+    padding-top:1em;
+    color:$colorBlack;
+    font-family:$headingFont;
+  }
+  .container {
+    display:block;
+    background-color:$colorBlack;
+    color:$colorGrey;
+    position:relative;
+    width:100%;
+    height:50px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    .trigger {
+      width:30px;
+      height:30px;
+      background-color:$colorBlack;
+      float:left;
+      margin:0;
+      padding:10px;
+      cursor:context-menu;
+      .top_menu_line {
+        border-top: 3px solid $colorGrey;
+        width:30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition: all 0.4s;
+        position: absolute;
+        top: 17px;
+      }
+      .top_menu_line_click {
+        opacity:0;
+        transition:0.4s;
+      }
+      .middle_menu_line1 {
+        border-top: 3px solid $colorGrey;
+        width:30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition:0.4s;
+        position: absolute;
+        top: 26px;
+      }
+      .middle_menu_line1_click {
+        transform:rotate(45deg);
+        transition:0.4s;
+        padding-bottom:0px;
+      }
+      .middle_menu_line2 {
+        border-top: 3px solid $colorGrey;
+        width:30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition: all 0.4s;
+        position: absolute;
+        top: 26px;
+      }
+      .middle_menu_line2_click {
+        transform:rotate(-45deg);
+        transition:0.4s;
+        padding-bottom:0px;
+      }
+      .bottom_menu_line {
+        border-top: 3px solid $colorGrey;
+        width:30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition: all 0.4s;
+        position: absolute;
+        top: 35px;
+      }
+      .bottom_menu_line_click {
+        opacity:0;
+        transition:0.4s;
+      }
+    }
+  }
+}
+
+header {
+  .container {
+    ul {
+      display:inline-block;
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0;
+      .li_pre_click {
+        display:inline-block;
+        float:left;
+        text-align:center;
+        width:1px;
+        border-right:1px solid $colorBlack;
+        overflow:hidden;
+        transition:0.4s;
+        a {
+          text-decoration:none;
+          margin:0;
+          img {
+            width:40px;
+            padding:5px;
+          }
+        }
+      }
+      .li_click {
+        width:50px;
+        transition:0.4s;
+        a {
+          img {
+            background-color:$colorGrey;
+          }
+        }
+      }
+      li a img:hover {
+        background-color: #C86754;
+      }
+    }
+  }
+}
+
+.main {
+  margin:0;
+  padding:0;
+  width:100%;
+  background-color:$colorGrey;
+  .album {
+    h2 {
+      margin:0;
+      padding-top:1em;
+      padding-left:30px;
+      background-color:$colorGreen;
+      color:$colorBlack;
+      font-family:$headingFont;
+    }
+    .pics {
+      padding:20px, 50px;
+      text-align:center;
+      transition:0.6s;
+      li {
+        display:inline-block;
+        padding:0px auto;
+        .img {
+          width:500px;
+          padding:15px;
+          margin:15px;
+          background-color:$colorBlack;
+          border-radius:10px;
+        }
+        .takeOver {
+          position:fixed;
+          vertical-align:center;
+          width:90%;
+          position: fixed;
+          left: 0px;
+          top: 200px;
+        }
+      }
+      .portAlign {
+        display: inline-block;
+        .img {
+          width:300px;
+        }
+      }
+    }
+    .describe {
+      position:relative;
+      background-color:$colorBlack;
+      color:$colorGrey;
+      text-align:left;
+      margin-bottom:0px;
+      padding:1em;
+      padding-right:50px;
+      transition:0.6s;
+      .move_top_a {
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        img {
+          background-color:$colorGrey;
+          border-radius:8px;
+        }
+      }
+    }
+    .pics.shrink, .describe.shrink {
+      height:0px;
+      overflow:hidden;
+      margin-top:3px;
+      margin-bottom:0px;
+      padding-top:0;
+      padding-bottom:0;
+      transition:0.6s;
+    }
+  }
+}
+
+.tall {
+  min-height:600px;
+}

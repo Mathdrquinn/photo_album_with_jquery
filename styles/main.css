@@ -1,0 +1,174 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #918979;
+  padding: 20px;
+  font-family: 'Jura', sans-serif; }
+
+header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #54C89A;
+  border-radius: 20px; }
+  header h1 {
+    padding-left: 30px;
+    margin: 0;
+    padding-top: 1em;
+    color: #3A3E3D;
+    font-family: 'Audiowide', cursive; }
+  header .container {
+    display: block;
+    background-color: #3A3E3D;
+    color: #DFDCC8;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 3px;
+    padding-top: 3px; }
+    header .container .trigger {
+      width: 30px;
+      height: 30px;
+      background-color: #3A3E3D;
+      float: left;
+      margin: 0;
+      padding: 10px;
+      cursor: context-menu; }
+      header .container .trigger .top_menu_line {
+        border-top: 3px solid #DFDCC8;
+        width: 30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition: all 0.4s;
+        position: absolute;
+        top: 17px; }
+      header .container .trigger .top_menu_line_click {
+        opacity: 0;
+        transition: 0.4s; }
+      header .container .trigger .middle_menu_line1 {
+        border-top: 3px solid #DFDCC8;
+        width: 30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition: 0.4s;
+        position: absolute;
+        top: 26px; }
+      header .container .trigger .middle_menu_line1_click {
+        transform: rotate(45deg);
+        transition: 0.4s;
+        padding-bottom: 0px; }
+      header .container .trigger .middle_menu_line2 {
+        border-top: 3px solid #DFDCC8;
+        width: 30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition: all 0.4s;
+        position: absolute;
+        top: 26px; }
+      header .container .trigger .middle_menu_line2_click {
+        transform: rotate(-45deg);
+        transition: 0.4s;
+        padding-bottom: 0px; }
+      header .container .trigger .bottom_menu_line {
+        border-top: 3px solid #DFDCC8;
+        width: 30px;
+        margin: 0px auto;
+        padding-bottom: 3px;
+        transition: all 0.4s;
+        position: absolute;
+        top: 35px; }
+      header .container .trigger .bottom_menu_line_click {
+        opacity: 0;
+        transition: 0.4s; }
+
+header .container ul {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0; }
+  header .container ul .li_pre_click {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 1px;
+    border-right: 1px solid #3A3E3D;
+    overflow: hidden;
+    transition: 0.4s; }
+    header .container ul .li_pre_click a {
+      text-decoration: none;
+      margin: 0; }
+      header .container ul .li_pre_click a img {
+        width: 40px;
+        padding: 5px; }
+  header .container ul .li_click {
+    width: 50px;
+    transition: 0.4s; }
+    header .container ul .li_click a img {
+      background-color: #DFDCC8; }
+  header .container ul li a img:hover {
+    background-color: #C86754; }
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #DFDCC8; }
+  .main .album h2 {
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 30px;
+    background-color: #54C89A;
+    color: #3A3E3D;
+    font-family: 'Audiowide', cursive; }
+  .main .album .pics {
+    padding: 20px, 50px;
+    text-align: center;
+    transition: 0.6s; }
+    .main .album .pics li {
+      display: inline-block;
+      padding: 0px auto; }
+      .main .album .pics li .img {
+        width: 500px;
+        padding: 15px;
+        margin: 15px;
+        background-color: #3A3E3D;
+        border-radius: 10px; }
+      .main .album .pics li .takeOver {
+        position: fixed;
+        vertical-align: center;
+        width: 90%;
+        position: fixed;
+        left: 0px;
+        top: 200px; }
+    .main .album .pics .portAlign {
+      display: inline-block; }
+      .main .album .pics .portAlign .img {
+        width: 300px; }
+  .main .album .describe {
+    position: relative;
+    background-color: #3A3E3D;
+    color: #DFDCC8;
+    text-align: left;
+    margin-bottom: 0px;
+    padding: 1em;
+    padding-right: 50px;
+    transition: 0.6s; }
+    .main .album .describe .move_top_a {
+      position: absolute;
+      right: 5px;
+      bottom: 5px; }
+      .main .album .describe .move_top_a img {
+        background-color: #DFDCC8;
+        border-radius: 8px; }
+  .main .album .pics.shrink, .main .album .describe.shrink {
+    height: 0px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.6s; }
+
+.tall {
+  min-height: 600px; }
